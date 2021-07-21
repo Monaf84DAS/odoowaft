@@ -8,6 +8,17 @@ odoo:
   merges:
     - origin $ODOO_VERSION
 
+OCA/server-auth:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/server-auth.git
+    kkamaa: https://github.com/kkamaa/server-auth.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - kkamaa 14.0-mig-auth-dynamic-groups
+    
 OCA/web:
   defaults:
     depth: $DEPTH_DEFAULT
