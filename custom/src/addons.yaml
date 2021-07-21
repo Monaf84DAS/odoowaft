@@ -5,5 +5,8 @@ odoo/addons:
 odoo/odoo/addons:
     - "*"
 
+OCA/server-auth:
+    - "*"
+    
 OCA/web:
     - "*"
